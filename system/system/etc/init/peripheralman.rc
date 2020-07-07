@@ -1,0 +1,8 @@
+service peripheralman /system/bin/peripheralman
+    class main
+    user root
+    # Some UARTs are shared with Bluetooth, so give peripheralman access to the
+    # bluetooth group rather than giving everyone rw access to those devices.
+    # See b/78327678 and b/112380556.
+    group system bluetooth
+    onrestart restart zygote

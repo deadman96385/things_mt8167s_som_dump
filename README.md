@@ -1,0 +1,13 @@
+# iot_mt8167s_som-user 8.1.0 OIM6.190107.007.A5 5341849 release-keys
+- manufacturer: google
+- platform: mt8167
+- codename: mt8167s_som
+- flavor: iot_mt8167s_som-user
+- release: 8.1.0
+- id: OIM6.190107.007.A5
+- incremental: 5341849
+- tags: release-keys
+- fingerprint: Things/iot_mt8167s_som/mt8167s_som:8.1.0/OIM6.190107.007.A5/5341849:user/release-keys
+- brand: Things
+- branch: iot_mt8167s_som-user-8.1.0-OIM6.190107.007.A5-5341849-release-keys
+- repo: things_mt8167s_som_dump

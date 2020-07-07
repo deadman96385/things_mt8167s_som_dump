@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<audioMapping version="0.1">
+  <sinks>
+    <device type="AUDIO_DEVICE_OUT_SPEAKER" tagName="Speaker" addr="" busName="DL1_I2S1_OUT_BUS" />
+    <device type="AUDIO_DEVICE_OUT_ALL_SCO" tagName="Sco" addr="" busName="DL1_I2S3_OUT_BUS" />
+  </sinks>
+  <sources>
+    <device type="AUDIO_DEVICE_IN_BUILTIN_MIC" tagName="Built-in Mic" addr="" busName="TDM_IN_BUS" />
+    <device type="AUDIO_DEVICE_IN_BLUETOOTH_SCO_HEADSET" tagName="Sco" addr="" busName="VUL_I2S0_IN_BUS" />
+    <device type="AUDIO_DEVICE_IN_LOOPBACK" tagName="Loopback" addr="" busName="AWB_I2S2_IN_BUS" />
+  </sources>
+</audioMapping>

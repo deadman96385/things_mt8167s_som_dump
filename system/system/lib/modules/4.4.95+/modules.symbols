@@ -1,0 +1,16 @@
+# Aliases for symbols, used by symbol_request().
+alias symbol:btmtk_interrupt btmtksdio
+alias symbol:gspca_disconnect gspca_main
+alias symbol:gspca_dev_probe gspca_main
+alias symbol:gspca_expo_autogain gspca_main
+alias symbol:btmtk_remove_card btmtksdio
+alias symbol:gspca_resume gspca_main
+alias symbol:gspca_coarse_grained_expo_autogain gspca_main
+alias symbol:gspca_suspend gspca_main
+alias symbol:btmtk_usb_trigger_core_dump btmtk_usb
+alias symbol:btmtk_enable_hs btmtksdio
+alias symbol:gspca_debug gspca_main
+alias symbol:gspca_dev_probe2 gspca_main
+alias symbol:gspca_frame_add gspca_main
+alias symbol:btmtk_usb_toggle_rst_pin btmtk_usb
+alias symbol:btmtk_add_card btmtksdio

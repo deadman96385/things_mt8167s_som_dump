@@ -1,0 +1,62 @@
+#
+# Copyright 2016 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+#
+# MTK platform .rc configure
+import init.mt8516.usb.rc
+import init.connectivity.rc
+
+on early-init
+    mount debugfs debugfs /sys/kernel/debug mode=0755
+
+on fs
+    write /proc/bootprof "INIT:Mount_START"
+    symlink /dev/block/platform/soc/11120000.mmc /dev/block/platform/bootdevice
+    mount_all /fstab.mt8516
+    write /proc/bootprof "INIT:Mount_END"
+
+on post-fs
+    # Our kernel supports tracefs, so ensure correct SELinux labeling.
+    restorecon_recursive /sys/kernel/debug/tracing
+    # This path is actually tracefs from a kernel automount, which
+    # doesn't respect original (debugfs) mount mode, so fix up permissions.
+    chmod 0755 /sys/kernel/debug/tracing
+
+on post-fs-data
+    setprop vold.post_fs_data_done 1
+    # create basic filesystem structure
+    mkdir /data/nvram 0771 root system
+    mkdir /data/nvram/media 0771 media audio
+
+on property:vold.decrypt=trigger_restart_min_framework
+    write /proc/bootprof "INIT:vold.decrypt=trigger_restart_min_framework"
+    setprop service.nvram_init 0
+    start nvram_daemon
+
+on property:vold.decrypt=trigger_restart_framework
+    write /proc/bootprof "INIT:vold.decrypt=trigger_restart_framework"
+    setprop service.nvram_init 0
+    start nvram_daemon
+
+service nvram_daemon /vendor/bin/nvram_daemon
+    class main
+    user root
+    group system
+    oneshot
+
+service NvRAMAgent /vendor/bin/nvram_agent_binder
+    class main
+    user system
+    group system

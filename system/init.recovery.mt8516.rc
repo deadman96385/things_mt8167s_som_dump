@@ -1,0 +1,5 @@
+on early-init
+    wait /dev/.coldboot_done 1000
+
+on fs
+    symlink /dev/block/platform/soc/11120000.mmc /dev/block/platform/bootdevice

@@ -1,0 +1,5 @@
+<exceptions>
+	<exception package='com.google.assistant.launcher'>
+		<permission name='android.permission.ACCESS_FINE_LOCATION' fixed='false'/>
+	</exception>
+</exceptions>

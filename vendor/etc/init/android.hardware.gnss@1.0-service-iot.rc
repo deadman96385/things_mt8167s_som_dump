@@ -1,0 +1,5 @@
+service gnss-service-1-0 /vendor/bin/hw/android.hardware.gnss@1.0-service-iot
+    class hal
+    user gps
+    group system gps radio
+    onrestart restart zygote

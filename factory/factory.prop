@@ -1,0 +1,4 @@
+ro.boot.wificountrycode=US
+ro.product.locale.language=en
+ro.product.locale.region=US
+ro.update.default_channel=stable-channel

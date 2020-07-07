@@ -1,0 +1,5 @@
+#!/system/bin/sh
+
+base=/system
+export CLASSPATH=$base/framework/oem_install.jar
+exec app_process $base/bin com.android.things.oem_install.OemShellCommand "$@"

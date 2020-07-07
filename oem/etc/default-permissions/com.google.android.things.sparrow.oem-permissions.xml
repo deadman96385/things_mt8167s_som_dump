@@ -1,0 +1,10 @@
+<exceptions>
+	<exception package='com.google.android.things.sparrow.oem'>
+		<permission name='com.google.android.things.permission.MANAGE_AUDIO_DEVICE_DRIVERS' fixed='false'/>
+		<permission name='com.google.android.things.permission.MANAGE_EFFECT_DRIVERS' fixed='false'/>
+		<permission name='com.google.android.things.permission.USE_PERIPHERAL_IO' fixed='false'/>
+		<permission name='com.google.android.things.permission.MANAGE_SENSOR_DRIVERS' fixed='false'/>
+		<permission name='com.google.android.things.permission.MANAGE_BLUETOOTH' fixed='false'/>
+		<permission name='com.google.android.things.permission.MODIFY_SCREEN_SETTINGS' fixed='false'/>
+	</exception>
+</exceptions>

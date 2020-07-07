@@ -1,0 +1,24 @@
+# start ged_srv
+on property:sys.boot_completed=1
+    start ged_srv
+
+service ged_srv /system/bin/ged_srv
+    class core
+    user system
+    group system readproc inet net_admin
+    disabled
+
+# Permission for ged proc node
+on boot
+    chown system system /sys/kernel/debug/ged/hal/fps_upper_bound
+    chmod 0660 /sys/kernel/debug/ged/hal/fps_upper_bound
+    chown system system /sys/kernel/debug/ged/hal/vsync_offset_level
+    chmod 0660 /sys/kernel/debug/ged/hal/vsync_offset_level
+    chown system system /sys/kernel/debug/ged/hal/event_notify
+    chmod 0660 /sys/kernel/debug/ged/hal/event_notify
+    chown media media /sys/kernel/debug/ged/hal/media_event
+    chown system system /sys/kernel/debug/ged/hal/custom_upbound_gpu_freq
+    chmod 0660 /sys/kernel/debug/ged/hal/custom_upbound_gpu_freq
+    chown system system /sys/kernel/debug/ged/hal/custom_boost_gpu_freq
+    chmod 0660 /sys/kernel/debug/ged/hal/custom_boost_gpu_freq
+

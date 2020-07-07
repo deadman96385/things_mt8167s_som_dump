@@ -1,0 +1,13 @@
+ro.sf.lcd_density=240
+crash_reporter.max_size_to_stop=104857600
+
+# DO NOT CHANGE any value below as it may impact:
+#   Backend server for metrics
+#   Demo loop video app
+ro.oem.product.brand=Lenovo
+ro.oem.product.manufacturer=LENOVO
+ro.oem.product.model=Lenovo Smart Clock
+ro.oem.product.name=CD-24501F
+
+ro.oem.build.name=0.114.10+prod.1.1.0.5341849
+ro.oem.build.timestamp=1552070389747

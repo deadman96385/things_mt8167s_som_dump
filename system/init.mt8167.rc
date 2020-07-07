@@ -1,0 +1,37 @@
+# MTK platform .rc configure
+import init.mt8516.rc
+
+on post-fs
+    # Display
+    chmod 0660 /dev/graphics/fb0
+    chown system graphics /dev/graphics/fb0
+
+    chmod 0660 /dev/mtk_disp_mgr
+    chown system graphics /dev/mtk_disp_mgr
+
+    chmod 0660 /dev/mtkfb_vsync
+    chown system graphics /dev/mtkfb_vsync
+
+    chmod 0660 /dev/sw_sync
+    chown system graphics /dev/sw_sync
+
+    # M4U
+    chmod 0444 /dev/m4u
+
+    # CMDQ
+    chmod 0644 /dev/mtk_cmdq
+    chown system system /dev/mtk_cmdq
+
+    # DISP
+    chmod 0444 /dev/mtk_disp
+
+    # MDP
+    chmod 0660 /dev/mt-mdp
+    chown system media /dev/mt-mdp
+
+    # SMI
+    chmod 0660 /dev/MTK_SMI
+    chown media media /dev/MTK_SMI
+
+    # Change ION driver permission
+    chmod 0666 /dev/ion

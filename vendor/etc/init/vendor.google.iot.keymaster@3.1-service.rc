@@ -1,0 +1,4 @@
+service keymaster-3-1 /vendor/bin/hw/vendor.google.iot.keymaster@3.1-service
+    class early_hal
+    user system
+    group system drmrpc

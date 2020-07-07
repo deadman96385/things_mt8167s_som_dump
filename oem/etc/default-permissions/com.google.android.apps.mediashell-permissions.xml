@@ -1,0 +1,20 @@
+<exceptions>
+	<exception package='com.google.android.apps.mediashell'>
+		<permission name='com.google.android.things.permission.ACCESS_BOOT_PARAMETERS' fixed='false'/>
+		<permission name='com.google.android.things.permission.MODIFY_LOCALE' fixed='false'/>
+		<permission name='com.google.android.things.permission.CAPTURE_AUDIO_ECHO_REFERENCE' fixed='false'/>
+		<permission name='com.google.android.things.permission.MANAGE_UPDATE_POLICY' fixed='false'/>
+		<permission name='com.google.android.things.permission.MODIFY_METRICS_SETTINGS' fixed='false'/>
+		<permission name='com.google.android.things.permission.MEDIA_CONTENT_CONTROL' fixed='false'/>
+		<permission name='android.permission.RECORD_AUDIO' fixed='false'/>
+		<permission name='android.permission.WRITE_EXTERNAL_STORAGE' fixed='false'/>
+		<permission name='com.google.android.things.permission.REBOOT' fixed='false'/>
+		<permission name='android.permission.ACCESS_COARSE_LOCATION' fixed='false'/>
+		<permission name='com.google.android.things.permission.MANAGE_CONCURRENT_WIFI_HOTSPOT' fixed='false'/>
+		<permission name='com.google.android.things.permission.READ_FACTORY_DATA' fixed='false'/>
+		<permission name='com.google.android.things.permission.PERFORM_UPDATE_NOW' fixed='false'/>
+		<permission name='com.google.android.things.permission.SET_TIME' fixed='false'/>
+		<permission name='android.permission.READ_EXTERNAL_STORAGE' fixed='false'/>
+		<permission name='android.permission.READ_PHONE_STATE' fixed='false'/>
+	</exception>
+</exceptions>

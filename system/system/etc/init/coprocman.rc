@@ -1,0 +1,9 @@
+service coprocman /system/bin/coprocman
+    class main
+    user root
+    group system
+    onrestart restart zygote
+    disabled
+
+on boot && property:ro.androidthings.experimental.coproc=1
+    start coprocman

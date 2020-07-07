@@ -1,0 +1,5 @@
+kernel/drivers/misc/mediatek/connectivity/bt/mt76xx/sdio/btmtksdio.ko:
+kernel/drivers/misc/mediatek/connectivity/bt/mt76xx/usb/btmtk_usb.ko:
+kernel/drivers/misc/mediatek/connectivity/wlan/gen4-mt7668/wlan_drv_gen4_mt7668.ko:
+kernel/drivers/misc/mediatek/connectivity/wlan/gen4-mt7668-usb/wlan_drv_gen4_mt7668_usb.ko:
+kernel/drivers/media/usb/gspca/gspca_main.ko:

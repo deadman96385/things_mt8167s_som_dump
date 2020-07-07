@@ -1,0 +1,5 @@
+service lowpan_hal_1_0 /vendor/bin/hw/android.hardware.lowpan@1.0-service
+    class hal
+    group lowpan
+    disabled
+    oneshot

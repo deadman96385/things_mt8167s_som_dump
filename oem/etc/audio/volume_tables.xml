@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<volumes>
+  <reference name="MEDIA_VOLUME_CURVE">
+    <point>0,-9600</point>
+    <point>10,-3600</point>
+    <point>20,-3100</point>
+    <point>30,-2600</point>
+    <point>40,-2100</point>
+    <point>50,-1700</point>
+    <point>60,-1350</point>
+    <point>70,-1025</point>
+    <point>80,-700</point>
+    <point>90,-375</point>
+    <point>100,0</point>
+  </reference>
+</volumes>

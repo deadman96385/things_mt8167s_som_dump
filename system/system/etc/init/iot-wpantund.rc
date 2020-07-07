@@ -1,0 +1,14 @@
+service iot-wpantund /system/bin/wpantund -s "system:/system/bin/lowpan_hdlc_adapter userdriver" -o Config:Daemon:ExternalNetifManagement 1 -I ${iot.lowpan.interface:-wpan1}
+    disabled
+    class main
+    user lowpan
+    group lowpan inet vpn
+    capabilities NET_ADMIN NET_RAW
+    setenv SHELL /system/bin/sh
+
+on property:iot.lowpan.ready=1
+    enable iot-wpantund
+    start iot-wpantund
+
+on property:iot.lowpan.ready=0
+    stop iot-wpantund

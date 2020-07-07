@@ -1,0 +1,5 @@
+service lowpandriverserv /system/bin/userlowpandriverservice
+    class late_start
+    user system
+    group lowpan
+    onrestart restart zygote

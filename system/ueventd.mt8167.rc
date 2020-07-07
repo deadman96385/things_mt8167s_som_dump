@@ -1,0 +1,23 @@
+# MTK in-house TEE
+/dev/trustzone            0660   system       drmrpc
+
+# RPMB
+/dev/block/mmcblk0rpmb    0660   root       system
+
+# Connectivity
+/dev/stpwmt               0660   system     system
+/dev/wmtdetect            0660   system     system
+
+# BT
+/dev/stpbt                0660   bluetooth  bluetooth
+
+# WIFI
+/dev/wmtWifi              0660   wifi     wifi
+
+# RGX device node
+/dev/pvrsrvkm             0666   root       root
+/dev/pvr_sync             0666   root       root
+/dev/dri/card0            0666   system     system
+
+# VideoCodec
+/dev/Vcodec               0660   media      system

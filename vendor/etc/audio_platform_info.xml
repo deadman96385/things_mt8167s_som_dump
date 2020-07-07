@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<audio_platform_info>
+    <pcm_ids>
+        <profile name="PROFILE_PLAYBACK_TDM_OUT"            id="0"/>
+        <profile name="PROFILE_PLAYBACK_DL1_I2S1"           id="4"/>
+        <profile name="PROFILE_PLAYBACK_DL1_I2S3"           id="4"/>
+        <profile name="PROFILE_PLAYBACK_DL2_I2S1"           id="6"/>
+        <profile name="PROFILE_PLAYBACK_DL2_I2S3"           id="6"/>
+        <profile name="PROFILE_CAPTURE_VUL_DMIC"            id="2"/>
+        <profile name="PROFILE_CAPTURE_VUL_I2S0"            id="2"/>
+        <profile name="PROFILE_CAPTURE_VUL_I2S2"            id="2"/>
+        <profile name="PROFILE_CAPTURE_TDM_IN"              id="1"/>
+        <profile name="PROFILE_SCO_PLAYBACK_DL1_I2S3"       id="4"/>
+        <profile name="PROFILE_SCO_PLAYBACK_DL2_I2S3"       id="6"/>
+        <profile name="PROFILE_SCO_PLAYBACK_DL1_MRG"        id="4"/>
+        <profile name="PROFILE_SCO_PLAYBACK_DL2_MRG"        id="6"/>
+        <profile name="PROFILE_SCO_CAPTURE_VUL_I2S0"        id="2"/>
+        <profile name="PROFILE_SCO_CAPTURE_AWB_I2S0"        id="3"/>
+        <profile name="PROFILE_SCO_CAPTURE_DAI_MRG"         id="5"/>
+        <profile name="PROFILE_ECHO_REF_CAPTURE_AWB_INT"    id="3"/>
+        <profile name="PROFILE_ECHO_REF_CAPTURE_AWB_I2S0"   id="3"/>
+        <profile name="PROFILE_ECHO_REF_CAPTURE_AWB_I2S2"   id="3"/>
+        <profile name="PROFILE_ECHO_REF_CAPTURE_TDM_IN"     id="1"/>
+    </pcm_ids>
+    <sw_gains>
+        <device name="SND_DEVICE_IN_SPEAKER_MIC"         sw_gain="0"/>
+    </sw_gains>
+</audio_platform_info>

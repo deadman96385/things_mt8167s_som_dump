@@ -1,0 +1,15 @@
+<exceptions>
+	<exception package='com.google.assistant.core'>
+		<permission name='com.google.android.things.permission.ACCESS_BOOT_PARAMETERS' fixed='false'/>
+		<permission name='android.permission.ACCESS_FINE_LOCATION' fixed='false'/>
+		<permission name='android.permission.ACCESS_COARSE_LOCATION' fixed='false'/>
+		<permission name='com.google.android.things.permission.MANAGE_UPDATE_POLICY' fixed='false'/>
+		<permission name='com.google.android.things.permission.READ_FACTORY_DATA' fixed='false'/>
+		<permission name='com.google.android.things.permission.BLOCK_UPDATES' fixed='false'/>
+		<permission name='com.google.android.things.permission.FACTORY_RESET' fixed='false'/>
+		<permission name='com.google.android.things.permission.PERFORM_UPDATE_NOW' fixed='false'/>
+		<permission name='android.permission.READ_PHONE_STATE' fixed='false'/>
+		<permission name='com.google.android.things.permission.REBOOT' fixed='false'/>
+		<permission name='com.google.android.things.permission.CHANGE_BOOT_PARAMETERS' fixed='false'/>
+	</exception>
+</exceptions>

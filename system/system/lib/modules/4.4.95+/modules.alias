@@ -1,0 +1,12 @@
+# Aliases extracted from modules themselves.
+alias sdio:c*v037Ad7666* btmtksdio
+alias sdio:c*v037Ad7668* btmtksdio
+alias sdio:c*v037Ad6632* btmtksdio
+alias sdio:c*v037Ad6630* btmtksdio
+alias sdio:c*v037Ad7608* wlan_drv_gen4_mt7668
+alias sdio:c*v037Ad6602* wlan_drv_gen4_mt7668
+alias usb:v3109p043Ed*dc*dsc*dp*icFFiscFFipFFin* wlan_drv_gen4_mt7668_usb
+alias usb:v043Ep3109d*dc*dsc*dp*icFFiscFFipFFin* wlan_drv_gen4_mt7668_usb
+alias usb:v0E8Dp7668d*dc*dsc*dp*icFFiscFFipFFin* wlan_drv_gen4_mt7668_usb
+alias usb:v0E8Dp7666d*dc*dsc*dp*icFFiscFFipFFin* wlan_drv_gen4_mt7668_usb
+alias usb:v0E8Dp6632d*dc*dsc*dp*icFFiscFFipFFin* wlan_drv_gen4_mt7668_usb

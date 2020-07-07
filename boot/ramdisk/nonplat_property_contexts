@@ -1,0 +1,9 @@
+crash_reporter         u:object_r:crash_reporter_prop:s0
+iot.lowpan.            u:object_r:iot_lowpan_prop:s0
+persist.mtk.wcn u:object_r:wmt_prop:s0
+ro.metricsd.           u:object_r:metricsd_prop:s0
+ro.oem.key1            u:object_r:oem_key1_prop:s0
+ro.wlan.mtk.wifi.5g     u:object_r:wifi_5g_prop:s0
+service.nvram_init     u:object_r:service_nvram_init_prop:s0
+service.wcn u:object_r:wmt_prop:s0
+sys.rpmb.ready u:object_r:sys_rpmb_ready_prop:s0

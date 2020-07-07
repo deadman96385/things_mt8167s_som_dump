@@ -1,0 +1,8 @@
+/dev/block/platform/bootdevice/by-name/system     /             ext4  ro                                            wait,slotselect,avb
+/dev/block/platform/bootdevice/by-name/vendor     /vendor       ext4  ro                                            wait,slotselect,avb
+/dev/block/platform/bootdevice/by-name/userdata   /data         ext4  noatime,nosuid,nodev,noauto_da_alloc,discard  wait,check,encryptable=/dev/block/platform/soc/11120000.mmc/by-name/metadata,
+/dev/block/platform/bootdevice/by-name/factory    /mnt/product/factory ext4  ro,barrier=1,discard,nosuid,nodev,noexec,context=u:object_r:factoryfs:s0  wait,nofail
+/dev/block/platform/bootdevice/by-name/misc       /misc         emmc  defaults                                      defaults
+/dev/block/platform/bootdevice/by-name/vbmeta     /vbmeta       emmc  ro                                            wait,slotselect
+/dev/block/platform/bootdevice/by-name/oem        /oem          ext4  ro,nosuid,nodev                               wait,slotselect,avb
+/devices/platform/soc/mt_usb*                     auto          vfat  defaults                                      voldmanaged=usbotg:auto,encryptable=userdata

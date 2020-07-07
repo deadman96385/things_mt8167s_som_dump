@@ -1,0 +1,2 @@
+user=system seinfo=platform name=com.google.android.things.customcheckin domain=CustomCheckin type=app_data_file
+user=system seinfo=platform name=com.google.android.things.internal.net domain=networking_services type=app_data_file
